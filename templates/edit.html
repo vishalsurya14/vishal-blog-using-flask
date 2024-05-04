@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    
+<div class="container">
+    <h1 class="text-center">Edit Blog</h1>
+    <form method='POST' action='/edit/{{blog.blog_id}}'>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name='title' value='{{blog.title}}'>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Author</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="uthor" name='author' value='{{blog.author}}'>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">content</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='content'  >{{blog.content}}</textarea>
+          </div>
+          <input type='submit' value='Edit' class= 'btn btn-primary'>
+        </form>
+    </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
